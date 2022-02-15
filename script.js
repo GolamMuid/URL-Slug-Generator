@@ -47,8 +47,6 @@ generateSlug.addEventListener("click", () => {
 
   output.classList.remove("hide");
   output.value = inputValue;
-  console.log(inputValue);
-  console.log(checkBox.checked);
 });
 
 // clear function
