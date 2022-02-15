@@ -42,8 +42,8 @@ generateSlug.addEventListener("click", () => {
 
   //   removing dash from the beginning and the end
 
-  inputValue = inputValue.replace(/^-+/, "");
-  inputValue = inputValue.replace(/-+$/, "");
+  inputValue = inputValue.replace(/^-+|^_+/, "");
+  inputValue = inputValue.replace(/-+$|_+$/, "");
 
   output.classList.remove("hide");
   output.value = inputValue;
