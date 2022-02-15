@@ -76,8 +76,6 @@ copy.addEventListener("click", () => {
 
   navigator.clipboard.writeText(output.value);
 
-  /* Alert the copied text */
-
   copy.innerHTML = "<i class='fa-solid fa-clipboard'></i> COPIED";
 
   copiedMessage.innerHTML = "copied: " + output.value;
