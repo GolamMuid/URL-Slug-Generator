@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Icon CDN  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS source  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>URL Slug Generator</title>
+</head>
+
+<body>
+
+    <!-- Nav Starts  -->
+
+    <!-- <nav id="navbar">
+        URL Slug Generator
+    </nav> -->
+
+    <section class="title">
+
+        <div class="title-container">
+            <div class="title">
+                URL Slug Generator
+            </div>
+        </div>
+
+    </section>
+
+    <section class="subtitle">
+
+        <div class="subtitle-container">
+            <div class="subtitle">
+                Make clean and user friendly URL slugs online
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Nav ends  -->
+
+    <!-- Main body starts  -->
+
+    <section class="content">
+
+        <div class="container">
+
+            <!-- Input section starts  -->
+
+            <div class="input-content-container">
+
+                <div class="input-box-container">
+
+                    <label for="input" class="label-text"> INPUT STRING: (Article title, tutorial title or any web page
+                        title)
+                    </label>
+
+                    <input type="text" class="input-box" id="input">
+
+                </div>
+
+                <div class="options-container">
+
+                    <div class="dash-underscore-button">
+                        <input type="radio" name="separate-with" id="dash" class="radio-dot" value="Dash"
+                            checked="checked">
+                        <label for="dash" class="radio-button"> Separate with dash (-) </label>
+                    </div>
+
+                    <div class="dash-underscore-button">
+                        <input type="radio" name="separate-with" id="underscore" class="radio-dot" value="Underscore">
+                        <label for="underscore" class="radio-button"> Separate with underscore (_) </label>
+                    </div>
+
+                    <div class="remove-number-checkbox">
+                        <input type="checkbox" name="remove-numbers" id="remove-numbers" value="remove-numbers">
+                        <label for="numbers"> Remove numbers </label>
+                    </div>
+
+
+                </div>
+
+                <div class="slug-clear-recent-container">
+                    <button class="buttons slug-button" id="generate-slug"> GENERATE SLUG </button>
+                    <button class="buttons" id="clear"> CLEAR </button>
+                    <button class="buttons" id="reset"> RESET </button>
+                </div>
+
+            </div>
+
+            <!-- Input Section ends  -->
+
+            <!-- Output Section starts  -->
+
+            <div class="output-container">
+
+                <div class="output-label">
+
+                    OUTPUT: (Clean URL slug)
+
+                </div>
+
+                <input class="output-box hide" id="output" readonly>
+
+                <div class="button-tip-container">
+
+                    <button class="buttons copy-button" id="copy-button"> <i class="fa-solid fa-copy"></i> COPY
+                    </button> <span class="copied"> text copied </span>
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Output Section ends  -->
+
+    </section>
+
+    <!-- Main body ends  -->
+
+    <!-- Script source  -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
